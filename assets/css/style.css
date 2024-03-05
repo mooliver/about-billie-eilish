@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --text-color: #0e0e0e;
+    --header-color: #dfdfdf;
+}
+
+* {
+    margin: 0;
+    /* border: red 1px solid; */
+}
+
+body {
+    font-family: "Mulish", serif;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+header {
+    text-align: center;
+    height: 1024px;
+    background: url(../img/poster.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    padding: 300px;
+    font-weight: 900;
+    font-size: 6em;
+    color: var(--header-color);
+
+    text-shadow: 0px 0px 100px var(--text-color);
+}
+
+menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+menu li {
+    padding: 10px 25px;
+}
+
+menu li:first-child {
+    padding-right: 30%;
+    font-family: "Abril Fatface", serif;
+    font-size: 1.8em;
+}
+
+menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+menu li a:hover {
+    color: #686868;
+}
