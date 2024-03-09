@@ -10,13 +10,19 @@
     /* border: red 1px solid; */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Mulish", serif;
     color: var(--text-color);
     font-weight: 600;
 }
 
-header {
+
+/* Main */
+#main {
     text-align: center;
     height: 1024px;
     background: url(../img/poster.jpg) no-repeat;
@@ -24,7 +30,7 @@ header {
     background-position: center;
 }
 
-header h1 {
+#main h1 {
     padding: 300px;
     font-weight: 900;
     font-size: 6em;
@@ -59,4 +65,18 @@ menu li a {
 
 menu li a:hover {
     color: #686868;
+}
+
+
+/* Život */
+
+#zivot-header {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 40px;
+}
+
+#zivot b {
+    font-weight: 800;
 }
