@@ -22,6 +22,11 @@ body {
     background: var(--backgroud-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .columns {
     display: flex;
 }
@@ -118,11 +123,11 @@ ol {
     list-style: none;
 }
 
-ol img {
+ol img, ul img {
     width: 300px;
 }
 
-ol h2 {
+ol h2, ul h2 {
     font-size: 1.25em;
     padding-bottom: 20px;
 }
@@ -135,8 +140,29 @@ ol h2 {
 
 /* Diskografie */
 
-#diskografie ul {
+#diskografie h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 35px;
+}
+
+#alba {
     columns: 4;
     list-style: none;
     text-align: center;
+}
+
+#singly {
+    columns: 3;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+
+footer  {
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    font-size: 1.2em;
+    padding: 50px;
 }
