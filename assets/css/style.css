@@ -3,6 +3,7 @@
 :root {
     --text-color: #0e0e0e;
     --header-color: #dfdfdf;
+    --backgroud-color: #ccbda8;
 }
 
 * {
@@ -18,16 +19,40 @@ body {
     font-family: "Mulish", serif;
     color: var(--text-color);
     font-weight: 600;
+    background: var(--backgroud-color);
 }
 
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding-left: 50px;
+    font-size: 1.2em;
+}
+
+.column:last-child {
+    text-align: center;
+}
+
+.column img {
+    height: 65%;
+}
+
+.icon {
+    font-size: 3em;
+}
 
 /* Main */
 #main {
     text-align: center;
     height: 1024px;
-    background: url(../img/poster.jpg) no-repeat;
+    background: url(../img/poster.png) no-repeat; 
     background-size: cover;
     background-position: center;
+
+    border-bottom: #0e0e0e 2px solid;
 }
 
 #main h1 {
@@ -70,13 +95,48 @@ menu li a:hover {
 
 /* Život */
 
-#zivot-header {
+.header {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 600;
     padding: 40px;
 }
 
 #zivot b {
     font-weight: 800;
+}
+
+#zivot ul {
+    font-size: 1.2em;
+}
+
+/* Top */
+
+ol {
+    columns: 5;
+    text-align: center;
+    list-style: none;
+}
+
+ol img {
+    width: 300px;
+}
+
+ol h2 {
+    font-size: 1.25em;
+    padding-bottom: 20px;
+}
+
+.info {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Diskografie */
+
+#diskografie ul {
+    columns: 4;
+    list-style: none;
+    text-align: center;
 }
