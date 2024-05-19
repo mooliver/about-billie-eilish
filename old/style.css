@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --text-color: #0e0e0e;
+    --header-color: #dfdfdf;
+    --backgroud-color: #ccbda8;
+}
+
+* {
+    margin: 0;
+    /* border: red 1px solid; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Mulish", serif;
+    color: var(--text-color);
+    font-weight: 600;
+    background: var(--backgroud-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding-left: 50px;
+    font-size: 1.2em;
+}
+
+.column:last-child {
+    text-align: center;
+}
+
+.column img {
+    height: 65%;
+}
+
+.icon {
+    font-size: 3em;
+}
+
+/* Main */
+#main {
+    text-align: center;
+    height: 1024px;
+    background: url(../img/poster.png) no-repeat; 
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: #0e0e0e 2px solid;
+}
+
+#main h1 {
+    padding: 300px;
+    font-weight: 900;
+    font-size: 6em;
+    color: var(--header-color);
+
+    text-shadow: 0px 0px 100px var(--text-color);
+}
+
+menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+menu li {
+    padding: 10px 25px;
+}
+
+menu li:first-child {
+    padding-right: 30%;
+    font-family: "Abril Fatface", serif;
+    font-size: 1.8em;
+}
+
+menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+menu li a:hover {
+    color: #686868;
+}
+
+
+/* Život */
+
+.header {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 40px;
+}
+
+#zivot b {
+    font-weight: 800;
+}
+
+#zivot ul {
+    font-size: 1.2em;
+}
+
+/* Top */
+
+ol {
+    columns: 5;
+    text-align: center;
+    list-style: none;
+}
+
+ol img, ul img {
+    width: 300px;
+}
+
+ol h2, ul h2 {
+    font-size: 1.25em;
+    padding-bottom: 20px;
+}
+
+.info {
+    font-size: 1em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Diskografie */
+
+#diskografie h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 35px;
+}
+
+#alba {
+    columns: 4;
+    list-style: none;
+    text-align: center;
+}
+
+#singly {
+    columns: 3;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+
+footer  {
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    font-size: 1.2em;
+    padding: 50px;
+}
