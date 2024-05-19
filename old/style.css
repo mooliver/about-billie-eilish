@@ -53,7 +53,7 @@ a {
 #main {
     text-align: center;
     height: 1024px;
-    background: url(../img/poster.png) no-repeat; 
+    background: url(../assets/img/poster.png) no-repeat; 
     background-size: cover;
     background-position: center;
 
